@@ -1,9 +1,0 @@
-package com.hplus.sport.jsf;
-
-public class HPlusSportTeam {
-
-	public HPlusSportTeam() {
-		
-	}
-
-}
