@@ -1,0 +1,12 @@
+package com.hplus.sport.jsf;
+
+import javax.faces.bean.ManagedBean;
+
+@ManagedBean(name="team",eager= true)
+public class HPlusSportTeam {
+
+	public HPlusSportTeam() {
+		
+	}
+
+}
