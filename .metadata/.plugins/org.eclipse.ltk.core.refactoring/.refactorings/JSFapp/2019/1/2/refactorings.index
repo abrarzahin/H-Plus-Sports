@@ -1,1 +1,4 @@
 1546804415037	Delete element
+1546814177950	Encapsulate field 'EMPLOYEES_FILE'
+1546814183825	Encapsulate field 'SEPARATOR'
+1546814271680	Encapsulate field 'file'
