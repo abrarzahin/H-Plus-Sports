@@ -1,6 +1,5 @@
 package com.hplus.sport.jsf;
 
-
 public class Employee {
 
 	private int ID;

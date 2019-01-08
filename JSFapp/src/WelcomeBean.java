@@ -4,13 +4,17 @@ import javax.faces.bean.SessionScoped;
 @ManagedBean
 @SessionScoped
 public class WelcomeBean {
-	private String message = "JSF is Awesome";
+
+	private String message = "Learning JSF is fun!";
+	
 	public WelcomeBean() {
 		// TODO Auto-generated constructor stub
 	}
+
 	public String getMessage() {
 		return message;
 	}
+
 	public void setMessage(String message) {
 		this.message = message;
 	}

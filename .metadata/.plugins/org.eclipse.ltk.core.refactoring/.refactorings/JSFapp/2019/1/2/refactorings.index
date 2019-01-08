@@ -1,23 +1,7 @@
-1546804415037	Delete element
-1546814177950	Encapsulate field 'EMPLOYEES_FILE'
-1546814183825	Encapsulate field 'SEPARATOR'
-1546814271680	Encapsulate field 'file'
-1546820840993	Rename resource 'dashboard.xhtml'
-1546820903434	Copy file
-1546820925031	Copy file
-1546821720829	Rename resource 'edit.html'
-1546821736870	Rename resource 'dashboard.html'
-1546821746387	Rename resource 'add.html'
-1546822122453	Rename resource 'index.html'
-1546823526893	Rename resource 'index.xhtml'
-1546823607890	Rename resource 'index.html'
-1546824591161	Encapsulate field 'fullName'
-1546826294436	Delete element
-1546829735576	Delete element
-1546829778545	Delete element
-1546835752294	Delete element
-1546835809246	Delete element
-1546835850467	Delete element
-1546836375644	Copy file
-1546836541404	Copy file
-1546836571613	Delete element
+1546913398210	Rename resource 'index.xhtml'
+1546913443677	Delete element
+1546913492671	Delete element
+1546913558672	Rename resource 'index.html'
+1546913877411	Delete element
+1546914408932	Rename resource 'index.xhtml'
+1546914446948	Rename resource 'index.html'
