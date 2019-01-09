@@ -15,13 +15,11 @@ public class HPlusSportTeam implements Serializable {
 	private static final long serialVersionUID = 1L;
 	private final String EMPLOYEES_FILE = "employees.txt";
 	private final String SEPARATOR = ";";
-	private final int DEFAULT_ID = 1001;
 	
 	private Employee employee;
 	private List<Employee> employeeList = new ArrayList<Employee>();
 	private FileUtils file;
 	
-	private int lastEmployeeID;
 	
 	public HPlusSportTeam() {
 		init();
@@ -32,21 +30,6 @@ public class HPlusSportTeam implements Serializable {
 		setUpEmployeeList();
 	}
 
-	public String add() {
-		
-		if(employee.getUploadedFile()!=null) {
-			file.saveFile(employee.getUploadedFile());
-			employee.setPhoto(file.getUploadedFileName());
-		}
-		
-		int id = employeeList.isEmpty() ? DEFAULT_ID : getLastEmployeeID()+1;
-		employee.setID(id);
-		employeeList.add(employee);
-		
-		employee = new Employee();
-		return "dashboard.xhtml?faces-redirect=true";
-	}
-	
 	public void setUpEmployeeList() {
 		List<String> line = file.getDataList();
 		
@@ -113,19 +96,6 @@ public class HPlusSportTeam implements Serializable {
 
 	public void setFile(FileUtils file) {
 		this.file = file;
-	}
-
-	public int getDEFAULT_ID() {
-		return DEFAULT_ID;
-	}
-
-	public int getLastEmployeeID() {
-		setLastEmployeeID();
-		return lastEmployeeID;
-	}
-
-	public void setLastEmployeeID() {
-		this.lastEmployeeID = employeeList.get(employeeList.size()-1).getID();
 	}
 
 }

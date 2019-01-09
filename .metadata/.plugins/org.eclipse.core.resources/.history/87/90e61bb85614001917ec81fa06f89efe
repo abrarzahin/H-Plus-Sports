@@ -34,11 +34,6 @@ public class HPlusSportTeam implements Serializable {
 
 	public String add() {
 		
-		if(employee.getUploadedFile()!=null) {
-			file.saveFile(employee.getUploadedFile());
-			employee.setPhoto(file.getUploadedFileName());
-		}
-		
 		int id = employeeList.isEmpty() ? DEFAULT_ID : getLastEmployeeID()+1;
 		employee.setID(id);
 		employeeList.add(employee);
