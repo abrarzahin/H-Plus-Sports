@@ -47,12 +47,6 @@ public class HPlusSportTeam implements Serializable {
 		return "dashboard.xhtml?faces-redirect=true";
 	}
 	
-	public String edit(Employee employee) {
-		this.employee = employee;
-		return "edit.xhtml?faces-redirect=true";
-	}
-	
-	
 	public void setUpEmployeeList() {
 		List<String> line = file.getDataList();
 		
