@@ -83,7 +83,7 @@
   		<f:facet name="header">Actions</f:facet>
   		<h:form id="edit-delete">
   		<h:commandButton id="edit" value="Edit" action="#{team.edit(employee)}"/>
-  		<h:commandButton id="delete" value="Delete" action="#{team.delete(employee)}" onclick="if(confirm('Are you sure?')==false) return false;"/>
+  		<h:commandButton id="delete" value="Delete" action="#{team.delete(employee)}"/>
   		</h:form>
   	</h:column>
   	
