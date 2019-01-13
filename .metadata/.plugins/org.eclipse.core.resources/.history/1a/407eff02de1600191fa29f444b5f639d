@@ -7,7 +7,6 @@ import java.util.List;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
-import javax.faces.event.ActionEvent;
 
 @ManagedBean(name="team", eager=true)
 @SessionScoped
@@ -23,7 +22,6 @@ public class HPlusSportTeam implements Serializable {
 	private FileUtils file;
 	
 	private int lastEmployeeID;
-	private String breadCrumb;
 	
 	public HPlusSportTeam() {
 		init();
@@ -34,14 +32,6 @@ public class HPlusSportTeam implements Serializable {
 		setUpEmployeeList();
 	}
 
-	public String response() {
-		return breadCrumb + "?faces-redirect=true";
-	}
-	
-	public void action(ActionEvent e) {
-		breadCrumb = (String)e.getComponent().getAttributes().get("breadCrumb");
-	}
-	
 	public String add() {
 		
 		if(employee.getUploadedFile()!=null) {
@@ -155,14 +145,6 @@ public class HPlusSportTeam implements Serializable {
 
 	public void setLastEmployeeID() {
 		this.lastEmployeeID = employeeList.get(employeeList.size()-1).getID();
-	}
-
-	public String getBreadCrumb() {
-		return breadCrumb;
-	}
-
-	public void setBreadCrumb(String breadCrumb) {
-		this.breadCrumb = breadCrumb;
 	}
 
 }
