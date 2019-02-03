@@ -46,8 +46,6 @@ public void grantPermission() {
 	public String validateLogin() {
 		
 		if(username.equals(ADMIN) && password.equals(PASS)) {
-			HttpSession session = SessionUtil.getSession();
-			session.setAttribute("admin", "admin");
 			return "dashboard?faces-redirect=true";
 		}else {
 			String message = "Oops! Something is wrong with your username and password";
